@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Hyper Bros Trading</title>
-        <meta name="description" content="Your favorite trading cards delivered!" />
+        <title>Okobogee Store</title>
+        <meta name="description" content="Your favorite geek stuff delivered!" />
       </Head>
 
       <Container>
-        <h1 className="sr-only">Hyper Bros. Trading Cards</h1>
+        <h1 className="sr-only">Okobogee Store</h1>
 
         {/* <div className={styles.discover}>
           <div className={styles.search}>
@@ -42,7 +42,7 @@ export default function Home() {
           <Button>View Cart</Button>
         </p>
 
-        <h2 className="sr-only">Available Cards</h2>
+        <h2 className="sr-only">Available Products</h2>
         <ul className={styles.products}>
           {products.map(product => {
             return (

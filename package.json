@@ -1,11 +1,10 @@
 {
-  "name": "my-ecommerce-app",
+  "name": "okobogee-store",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Colby Fayock",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "name": "Edith",
+    "url": "https://edithmg.netlify.app"
   },
   "license": "MIT",
   "scripts": {

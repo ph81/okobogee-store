@@ -15,7 +15,7 @@ export default function Product({ product }) {
     <Layout>
       <Head>
         <title>{ product.title }</title>
-        <meta name="description" content={`Find ${product.title} at Hyper Bros Trading`} />
+        <meta name="description" content={`Find ${product.title} at Okobogee Store`} />
       </Head>
 
       <Container>

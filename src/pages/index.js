@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 import { FaShoppingCart } from 'react-icons/fa';
 
 import Layout from '@components/Layout';
@@ -12,6 +13,9 @@ import products from '@data/products.json';
 import styles from '@styles/Home.module.scss'
 
 export default function Home() {
+
+  const api_key = process.env.NEXT_SNIPCART_PUBLIC_KEY;
+  console.log(api_key);
   // function handleOnSearch() {
   //   // Do something here
   // }
@@ -20,6 +24,9 @@ export default function Home() {
       <Head>
         <title>Okobogee Store</title>
         <meta name="description" content="Your favorite geek stuff delivered!" />
+        <link rel="preconnect" href="https://app.snipcart.com" />
+        <link rel="preconnect" href="https://cdn.snipcart.com" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
       </Head>
 
       <Container>
@@ -68,6 +75,8 @@ export default function Home() {
           })}
         </ul>
       </Container>
+      <Script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></Script>
+      <div hidden id="snipcart" data-api-key={api_key}></div>
     </Layout>
   )
 }
